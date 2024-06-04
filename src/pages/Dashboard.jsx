@@ -23,7 +23,7 @@ function Dashboard() {
     // Chart Data
     const [options, setOptions] = useState({
         chart: {
-            id: "basic-bar"
+            id: "basic-bar",
         },
         xaxis: {
             categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
@@ -89,14 +89,14 @@ function Dashboard() {
                                 </Swiper>
                             </div>
                         </div>
-                        <div className="col-sm-12">
+                        <div className="col-sm-4">
                             <h1 className='text-4xl font-semibold mt-5'>Chart</h1>
                             <div className="chart-part mt-2">
                                 <Chart
                                     options={options}
                                     series={series}
                                     type="bar"
-                                    width="500"
+                                    width="100%"
                                 />
                             </div>
                         </div>
